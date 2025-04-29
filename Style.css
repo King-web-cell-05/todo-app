@@ -39,7 +39,7 @@ h1 {
   border: 2px solid rgb(18, 78, 58);
   border-radius: 1000px;
   font: inherit;
-  color:black;
+  color: black;
   caret-color: aqua;
 }
 #todo-input {
@@ -120,19 +120,29 @@ input[type="checkbox"]:checked ~ .todo-text {
 input[type="checkbox"] {
   display: none;
 }
-@media(max-width:550px){
-    html{
-        font-size: 12px;
-    }
-    #add-button{
-        position: unset;
-        width: 100%;
-        margin-top: 10px;
-        padding: 15px;
-        height: auto;
-    }
-    h1{
-        margin-top: 5opx;
-        font-size: 15vw;
-    }
+@media (max-width: 550px) {
+  html {
+    font-size: 12px;
+  }
+  #add-button {
+    position: unset;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    height: auto;
+  }
+  h1 {
+    margin-top: 5opx;
+    font-size: 15vw;
+  }
+}
+
+footer {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(15, 212, 212);
+}
+footer span{
+  color: white;
 }
