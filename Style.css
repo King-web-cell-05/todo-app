@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+body {
+  min-height: 100vh;
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 4rem;
+  font-weight: 800px;
+  text-transform: uppercase;
+  text-align: center;
+  color: aqua;
+}
+.wrapper {
+  width: 700px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#todo-input {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  width: 100%;
+  background-color: none;
+  border: 2px solid rgb(18, 78, 58);
+  border-radius: 1000px;
+  font: inherit;
+  color:black;
+  caret-color: aqua;
+}
+#todo-input {
+  outline: none;
+}
+form {
+  position: relative;
+}
+#add-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  background-color: rgb(19, 214, 214);
+  height: 100%;
+  padding: 0px 30px;
+  border: none;
+  border-radius: 1000px;
+  font: inherit;
+  font-weight: 600px;
+  color: black;
+  cursor: pointer;
+}
+.todo {
+  margin-bottom: 10px;
+  padding: 0px 16px;
+  background-color: rgb(17, 16, 16);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.todo .todo-text {
+  padding: 15px;
+  padding-right: 0;
+  flex-grow: 1;
+  transition: 200ms ease;
+}
+button {
+  background: none;
+  padding: 3px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(71, 64, 64);
+}
+button i:hover {
+  color: red;
+}
+button i {
+  transition: 200ms ease;
+}
+.custom-checkbox {
+  border: 2px solid aqua;
+  border-radius: 50%;
+  min-height: 20px;
+  min-width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0px;
+  color: transparent;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked ~ .custom-checkbox {
+  background-color: aqua;
+}
+input[type="checkbox"]:checked ~ .custom-checkbox {
+  color: rgb(17, 16, 16);
+}
+input[type="checkbox"]:checked ~ .todo-text {
+  text-decoration: line-through;
+  color: rgb(87, 77, 77);
+}
+input[type="checkbox"] {
+  display: none;
+}
+@media(max-width:550px){
+    html{
+        font-size: 12px;
+    }
+    #add-button{
+        position: unset;
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px;
+        height: auto;
+    }
+    h1{
+        margin-top: 5opx;
+        font-size: 15vw;
+    }
+}
